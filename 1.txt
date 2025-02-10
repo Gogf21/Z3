@@ -1,0 +1,50 @@
+<h2>Форма</h2>
+    <form action="/example" method="POST">
+        <label>
+            ФИО:<br>
+            <input name="field-name-1">
+        </label><br>
+        <label>
+            Телефон:<br />
+            <input name="field-num" placeholder="Введите ваш номер" />
+        </label><br />
+        <label>
+            Текстовое поле email:<br>
+            <input name="field-email" placeholder="Введите вашу почту" type="email">
+        </label><br>
+        <label>
+            Дата рождения:<br>
+            <input name="field-date" value="2024-09-10" type="date">
+        </label><br>
+        Ваш пол:<br>
+        <label><input type="radio" checked="checked" name="user-gender" value="Мужской">
+            Мужской</label>
+        <label><input type="radio" name="user-gender" value="Женский">
+            Женский</label><br>
+        <label>
+            Любимый язык программирования
+            <br>
+            <select name="field-name-4[]" multiple="multiple">
+                <option value="Значение1" selected="selected>Pascal</option>
+                <option value="Значение2">C</option>
+                <option value="Значение3">C++</option>
+                <option value="Значение3">PHP</option>
+                <option value="Значение3">JavaScript</option>
+                <option value="Значение3">Python</option>
+                <option value="Значение3">Java</option>
+                <option value="Значение3">Haskel</option>
+                <option value="Значение3">Clojure</option>
+                <option value="Значение3">Prolog</option>
+                <option value="Значение3">Scala</option>
+        </select>
+        </label><br>
+        <label></label>
+            Ваша биография:<br>
+            <textarea name="field-name-2"></textarea>
+        </label><br>
+        <br>
+        <label><input type="checkbox" checked="checked" name="check-1">
+        С контрактом ознакомлен (а)</label><br>
+        
+        <input type="submit" value="Сохранить">
+    </form>
